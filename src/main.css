@@ -1,0 +1,126 @@
+html{
+
+    min-height: max-content;
+}
+
+body{
+    background-color: darkviolet;
+    min-width: 0px;
+}
+
+form{
+    background-color:white;
+    width: 30%;
+    height: 63%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
+    border-radius: 10px;
+    min-width: 250px;
+    box-shadow: 10px 10px rgb(71, 1, 104);
+   
+}
+
+input{
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 3px;
+    text-align: center;
+    font-family: Arial;
+    border: 1px solid #ccc;
+    
+}
+
+-moz-appearance {
+background-color: lawngreen;
+}
+
+input[type=button] {
+    width: 40%;
+    background-color:darkviolet;
+    color: white;
+    padding: 12px 20px;
+    margin-left:5%;
+    margin-right: 2%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    margin-top: 7%;
+  }
+  input[type=button]:disabled{
+    background-color:grey;
+    cursor: initial;
+    
+  }
+
+label{
+   font-family: Arial;
+   float: left;
+   size: 100%;
+}
+
+#result{
+  text-align: center;
+  margin-top: 30px;
+}
+
+[data-tooltip] {
+    position: relative;
+  }
+  
+  [data-tooltip]:after {
+    display: none;
+    position: absolute;
+    font-family: Arial;
+    font-size: 70%;
+    max-width: 150px;
+    min-width: 100px;
+    max-height: 80px;
+    word-wrap: break-word;
+    top: -15px;
+    margin-left: 10%;
+    padding: 10px;
+    border-radius: 3px;
+    left: calc(100% + 2px);
+    content: attr(data-tooltip);
+
+    background-color: #411a34;
+    color: White;
+  }
+  
+  [data-tooltip]:hover:after {
+    display: block;
+  }
+
+  #erro{
+      color: red;
+      font-family: Arial;
+    font-size: 70%;
+
+    font-weight: bold;
+  }
+
+  #result{
+      background-color: rgb(46, 7, 63);
+      color: white;
+      width: 20%;
+      min-width: 150px;
+      font-size: 90%;
+      font-family: Arial;
+      font-weight: bold;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-size-adjust: 10px;
+      box-shadow: 5px 5px rgb(123, 2, 175);
+      border-style: dashed;
+      border: 2px dashed grey;
+  }
+
+
+  .wrapper{
+    min-width: 1000px;
+    }
