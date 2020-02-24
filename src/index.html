@@ -4,12 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <div>
-      <h1>Olá mundo.</h1>
-    </div>
-    <script src="./main.js"></script>
-  </body>
+        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+       <center> <img src="heart-logo.png">
+       
+             <form>
+                <label for="tDiario">Tempo Diário:</label>
+                <span data-tooltip="Quantas horas do seu dia você irá dedicar ao projeto"><input type="number" id="tDiario" name="tDiario"  onkeyup="enviar()"></span>
+                <label for="dEfetivos">Dias Efetivos:</label>
+            <span data-tooltip="Quantidade de dias dentro do prazo que você irá trabalhar, ex: Segunda à sexta"><input type="number" id="dEfetivos" name="dEfetivos" onkeyup="enviar()"></span>
+                <label for="dFerias">Dias de Férias:</label>
+                <span data-tooltip="Dias dentro do prazo que você não irá trabalhar, ex: Domingos"><input type="number" id="dFerias" name="dFerias" onkeyup="enviar()"></span>
+                <label for="vTotal">Valor Total:</label>
+                <span data-tooltip="Valor cobrado para a realização do freela"><input type="number" id="vTotal" name="vTotal"  onkeyup="enviar()"></span>
+
+                <input type="button" id="btnLimpar" value="Limpar" onclick="limpar();"/>
+                <div id="erro"></div>
+             </form>
+             <div id="result">Sua hora vale R$</div></center>
+    
+       
+    </body>
 </html>
