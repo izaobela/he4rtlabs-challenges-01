@@ -14,14 +14,14 @@
                 <label for="tDiario">Tempo Diário:</label>
                 <span data-tooltip="Quantas horas do seu dia você irá dedicar ao projeto"><input type="number" id="tDiario" name="tDiario"  onkeyup="enviar()"></span>
                 <label for="dEfetivos">Dias Efetivos:</label>
-            <span data-tooltip="Quantidade de dias dentro do prazo que você irá trabalhar, ex: Segunda à sexta"><input type="number" id="dEfetivos" name="dEfetivos" onkeyup="enviar()"></span>
+                <span data-tooltip="Quantidade de dias dentro do prazo que você irá trabalhar, ex: Segunda à sexta"><input type="number" id="dEfetivos" name="dEfetivos" onkeyup="enviar()"></span>
                 <label for="dFerias">Dias de Férias:</label>
                 <span data-tooltip="Dias dentro do prazo que você não irá trabalhar, ex: Domingos"><input type="number" id="dFerias" name="dFerias" onkeyup="enviar()"></span>
                 <label for="vTotal">Valor Total:</label>
-                <span data-tooltip="Valor cobrado para a realização do freela"><input type="number" id="vTotal" name="vTotal"  onkeyup="enviar()"></span>
-
+                <span data-tooltip="Valor cobrado para a realização do freela"><input type="number" id="vTotal" name="vTotal" onkeyup="enviar()"></span>
+                <center><label></label></center>
                 <input type="button" id="btnLimpar" value="Limpar" onclick="limpar();"/>
-                <div id="erro"></div>
+
              </form>
              <div id="result">Sua hora vale R$</div></center>
     
